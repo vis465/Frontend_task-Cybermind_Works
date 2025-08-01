@@ -10,9 +10,10 @@ async function bootstrap() {
     origin: '*',  
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type'],
-    
   });
 
-  await app.listen(3000);
+  const port = 3000;
+  await app.listen(port);
+  
 }
 bootstrap();
