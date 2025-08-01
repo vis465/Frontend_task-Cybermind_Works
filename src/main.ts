@@ -12,8 +12,8 @@ async function bootstrap() {
     allowedHeaders: ['Content-Type'],
   });
 
-  const port = 3000;
-  await app.listen(port);
+  const port = 5000;
+  await app.listen(port,'0.0.0.0');
   
 }
 bootstrap();
